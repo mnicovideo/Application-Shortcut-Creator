@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D8465AA16BFF81900C2FEB4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8465A916BFF81900C2FEB4 /* Cocoa.framework */; };
+		2D8465AC16BFF81900C2FEB4 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8465AB16BFF81900C2FEB4 /* AppleScriptObjC.framework */; };
+		2D8465B616BFF81900C2FEB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D8465B416BFF81900C2FEB4 /* InfoPlist.strings */; };
+		2D8465B816BFF81900C2FEB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8465B716BFF81900C2FEB4 /* main.m */; };
+		2D8465BC16BFF81900C2FEB4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8465BA16BFF81900C2FEB4 /* Credits.rtf */; };
+		2D8465BE16BFF81900C2FEB4 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 2D8465BD16BFF81900C2FEB4 /* AppDelegate.applescript */; };
+		2D8465C116BFF81900C2FEB4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8465BF16BFF81900C2FEB4 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D8465A616BFF81900C2FEB4 /* Application Shortcut Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Application Shortcut Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8465A916BFF81900C2FEB4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2D8465AB16BFF81900C2FEB4 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		2D8465AE16BFF81900C2FEB4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2D8465AF16BFF81900C2FEB4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2D8465B016BFF81900C2FEB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2D8465B316BFF81900C2FEB4 /* Application Shortcut Creator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Application Shortcut Creator-Info.plist"; sourceTree = "<group>"; };
+		2D8465B516BFF81900C2FEB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2D8465B716BFF81900C2FEB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D8465B916BFF81900C2FEB4 /* Application Shortcut Creator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Application Shortcut Creator-Prefix.pch"; sourceTree = "<group>"; };
+		2D8465BB16BFF81900C2FEB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2D8465BD16BFF81900C2FEB4 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
+		2D8465C016BFF81900C2FEB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D8465A316BFF81900C2FEB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8465AA16BFF81900C2FEB4 /* Cocoa.framework in Frameworks */,
+				2D8465AC16BFF81900C2FEB4 /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D84659D16BFF81900C2FEB4 = {
+			isa = PBXGroup;
+			children = (
+				2D8465B116BFF81900C2FEB4 /* Application Shortcut Creator */,
+				2D8465A816BFF81900C2FEB4 /* Frameworks */,
+				2D8465A716BFF81900C2FEB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D8465A716BFF81900C2FEB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D8465A616BFF81900C2FEB4 /* Application Shortcut Creator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D8465A816BFF81900C2FEB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D8465A916BFF81900C2FEB4 /* Cocoa.framework */,
+				2D8465AB16BFF81900C2FEB4 /* AppleScriptObjC.framework */,
+				2D8465AD16BFF81900C2FEB4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D8465AD16BFF81900C2FEB4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D8465AE16BFF81900C2FEB4 /* AppKit.framework */,
+				2D8465AF16BFF81900C2FEB4 /* CoreData.framework */,
+				2D8465B016BFF81900C2FEB4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2D8465B116BFF81900C2FEB4 /* Application Shortcut Creator */ = {
+			isa = PBXGroup;
+			children = (
+				2D8465BD16BFF81900C2FEB4 /* AppDelegate.applescript */,
+				2D8465BF16BFF81900C2FEB4 /* MainMenu.xib */,
+				2D8465B216BFF81900C2FEB4 /* Supporting Files */,
+			);
+			path = "Application Shortcut Creator";
+			sourceTree = "<group>";
+		};
+		2D8465B216BFF81900C2FEB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D8465B316BFF81900C2FEB4 /* Application Shortcut Creator-Info.plist */,
+				2D8465B416BFF81900C2FEB4 /* InfoPlist.strings */,
+				2D8465B716BFF81900C2FEB4 /* main.m */,
+				2D8465B916BFF81900C2FEB4 /* Application Shortcut Creator-Prefix.pch */,
+				2D8465BA16BFF81900C2FEB4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D8465A516BFF81900C2FEB4 /* Application Shortcut Creator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D8465C416BFF81900C2FEB4 /* Build configuration list for PBXNativeTarget "Application Shortcut Creator" */;
+			buildPhases = (
+				2D8465A216BFF81900C2FEB4 /* Sources */,
+				2D8465A316BFF81900C2FEB4 /* Frameworks */,
+				2D8465A416BFF81900C2FEB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Application Shortcut Creator";
+			productName = "Application Shortcut Creator";
+			productReference = 2D8465A616BFF81900C2FEB4 /* Application Shortcut Creator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D84659E16BFF81900C2FEB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = mii;
+			};
+			buildConfigurationList = 2D8465A116BFF81900C2FEB4 /* Build configuration list for PBXProject "Application Shortcut Creator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2D84659D16BFF81900C2FEB4;
+			productRefGroup = 2D8465A716BFF81900C2FEB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D8465A516BFF81900C2FEB4 /* Application Shortcut Creator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D8465A416BFF81900C2FEB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8465B616BFF81900C2FEB4 /* InfoPlist.strings in Resources */,
+				2D8465BC16BFF81900C2FEB4 /* Credits.rtf in Resources */,
+				2D8465C116BFF81900C2FEB4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D8465A216BFF81900C2FEB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8465B816BFF81900C2FEB4 /* main.m in Sources */,
+				2D8465BE16BFF81900C2FEB4 /* AppDelegate.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D8465B416BFF81900C2FEB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D8465B516BFF81900C2FEB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2D8465BA16BFF81900C2FEB4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D8465BB16BFF81900C2FEB4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		2D8465BF16BFF81900C2FEB4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D8465C016BFF81900C2FEB4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D8465C216BFF81900C2FEB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2D8465C316BFF81900C2FEB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2D8465C516BFF81900C2FEB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Application Shortcut Creator/Application Shortcut Creator-Prefix.pch";
+				INFOPLIST_FILE = "Application Shortcut Creator/Application Shortcut Creator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2D8465C616BFF81900C2FEB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Application Shortcut Creator/Application Shortcut Creator-Prefix.pch";
+				INFOPLIST_FILE = "Application Shortcut Creator/Application Shortcut Creator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8465A116BFF81900C2FEB4 /* Build configuration list for PBXProject "Application Shortcut Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8465C216BFF81900C2FEB4 /* Debug */,
+				2D8465C316BFF81900C2FEB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8465C416BFF81900C2FEB4 /* Build configuration list for PBXNativeTarget "Application Shortcut Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8465C516BFF81900C2FEB4 /* Debug */,
+				2D8465C616BFF81900C2FEB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D84659E16BFF81900C2FEB4 /* Project object */;
+}
