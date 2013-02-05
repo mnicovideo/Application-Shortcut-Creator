@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D0DF03316C00550006B9124 /* shortcut creator.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2D0DF03216C00550006B9124 /* shortcut creator.icns */; };
-		2D0DF03516C005ED006B9124 /* shortcut creator256.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0DF03416C005ED006B9124 /* shortcut creator256.png */; };
 		2D8465AA16BFF81900C2FEB4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8465A916BFF81900C2FEB4 /* Cocoa.framework */; };
 		2D8465AC16BFF81900C2FEB4 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8465AB16BFF81900C2FEB4 /* AppleScriptObjC.framework */; };
 		2D8465B616BFF81900C2FEB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D8465B416BFF81900C2FEB4 /* InfoPlist.strings */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		2D0DF03216C00550006B9124 /* shortcut creator.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "shortcut creator.icns"; sourceTree = "<group>"; };
-		2D0DF03416C005ED006B9124 /* shortcut creator256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shortcut creator256.png"; path = "../../shortcut creator256.png"; sourceTree = "<group>"; };
 		2D8465A616BFF81900C2FEB4 /* Application Shortcut Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Application Shortcut Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8465A916BFF81900C2FEB4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2D8465AB16BFF81900C2FEB4 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
@@ -100,7 +98,6 @@
 		2D8465B216BFF81900C2FEB4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2D0DF03416C005ED006B9124 /* shortcut creator256.png */,
 				2D8465B316BFF81900C2FEB4 /* Application Shortcut Creator-Info.plist */,
 				2D8465B416BFF81900C2FEB4 /* InfoPlist.strings */,
 				2D8465B716BFF81900C2FEB4 /* main.m */,
@@ -165,7 +162,6 @@
 				2D8465BC16BFF81900C2FEB4 /* Credits.rtf in Resources */,
 				2D8465C116BFF81900C2FEB4 /* MainMenu.xib in Resources */,
 				2D0DF03316C00550006B9124 /* shortcut creator.icns in Resources */,
-				2D0DF03516C005ED006B9124 /* shortcut creator256.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
