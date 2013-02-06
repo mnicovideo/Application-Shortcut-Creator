@@ -60,6 +60,37 @@ script GenericScript
         return resData
     end getLastLayerOfDirData_
 
+    script RecordUtility
+        on keyValue_(a_record, a_key)
+            run script "
+            on value_of(obj)
+                obj's |" & a_key & "|
+            end
+            me"
+            result's value_of(a_record)
+        end keyValue_
+        on setKeyValue_(a_record, a_key, a_value)
+            run script "
+            on set_value(obj, v)
+                try
+                    set obj's |" & a_key & "| to v
+                    obj
+                    on error number -10006
+                    obj & {|" & a_key & "|:v}
+                end try
+            end
+            me"
+            result's set_value(a_record, a_value)
+        end setKeyValue_
+        on recordFromKeyList_(keys, val)
+            set rec to {}
+            repeat with i in keys
+                set rec to setKeyValue_(rec, i, val)
+            end repeat
+            return rec
+        end recordFromKeyList_
+    end script
+
 end script
 
 script CocoaGenericScript
@@ -72,59 +103,23 @@ script CocoaGenericScript
         end script
     end make
 
+    on recordOpenPanelProperties(aData)
+        set keyList to {"title", "message", "directoryURL", "allowedFileTypes", "showsHiddenFiles", "canChooseFiles", "canChooseDirectories", "allowsMultipleSelection"}
+        set rec to recordFromKeyList_(keyList, false) of my RecordUtility
+        set title of rec to ""
+        set message of rec to ""
+        set directoryURL of rec to missing value
+        set allowedFileTypes of rec to missing value
+        repeat with i in keyList
+            try
+                set rec to my RecordUtility's setKeyValue_(rec, i, my RecordUtility's keyValue_(aData, i))
+            end try
+        end repeat
+        return rec
+    end recordOpenPanelProperties
+    
     on openPanel_(aData)
-        set p to "{dummy:0"
-        try
-            set p to p & ",title:" & aData's title
-        on error
-            set p to p & ",title:\"\""
-        end try
-        try
-            set p to p & ", message:" & aData's message
-        on error
-            set p to p & ", message:\"\""
-        end try
-        try
-            set p to p & ",directoryURL:" & aData's directoryURL
-        on error
-            set p to p & ", directoryURL:missing value"
-        end try
-        try
-            set tmpItem to "{"
-            repeat with theItem in aData's allowedFileTypes
-                set tmpItem to tmpItem & "\"" & theItem & "\","
-            end repeat
-            if last character of tmpItem = "," then
-                set cn to the (length of tmpItem) - 1
-                set tmpItem to characters 1 thru cn of tmpItem as string
-            end if
-            set tmpItem to tmpItem & "}"
-            set p to p & ",allowedFileTypes:" & tmpItem
-        on error
-            set p to p & ", allowedFileTypes:missing value"
-        end try
-        try
-            set p to p & ",showsHiddenFiles:" & aData's showsHiddenFiles
-        on error
-            set p to p & ", showsHiddenFiles:false"
-        end try
-        try
-            set p to p & ",canChooseFiles:" & aData's canChooseFiles
-        on error
-            set p to p & ", canChooseFiles:false"
-        end try
-        try
-            set p to p & ",canChooseDirectories:" & aData's canChooseDirectories
-        on error
-            set p to p & ", canChooseDirectories:false"
-        end try
-        try
-            set p to p & ",allowsMultipleSelection:" & aData's allowsMultipleSelection
-        on error
-            set p to p & ", allowsMultipleSelection:false"
-        end try
-        set p to p & "}"
-        set p to run script result
+        set p to recordOpenPanelProperties(aData)
         set myFile to {}
         set thePanel to current application's NSOpenPanel's openPanel()
         set productFolder to POSIX path of (path to home folder)
